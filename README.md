@@ -21,22 +21,3 @@ Proyek ini memprediksi **harga mobil (`price`)** berdasarkan **ukuran mesin (`en
 
 Contoh: ukuran mesin 130 → perkiraan harga ≈ $14.066,60
 
-## Struktur Folder
-```
-├── Linear Regression Car Price.ipynb      # notebook Colab: EDA, training, evaluasi, simpan model
-├── car_price.csv                          # dataset (enginesize, price)
-├── regression.py                          # aplikasi Streamlit
-├── models/
-│   └── linear_regression_carprice.pkl     # model hasil training
-├── requirements.txt
-└── README.md
-```
-
-## Cara Menjalankan
-```bash
-python -m venv venv
-venv\Scripts\activate          # Windows
-pip install -r requirements.txt
-streamlit run regression.py
-```
-Aplikasi akan terbuka di `http://localhost:8501`. Geser slider ukuran mesin lalu klik **Proses** untuk melihat perkiraan harga mobil.
